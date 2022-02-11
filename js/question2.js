@@ -1,9 +1,10 @@
 // KEY fd553c7b21f04a49bd5ac558a3e1af3e
 // https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=
-/*
+
 const url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=fd553c7b21f04a49bd5ac558a3e1af3e";
 const resultsHTML = document.querySelector(".results");
 resultsHTML.innerHTML = "";
+const showLoadingIndicator = 5;
 async function getGamesData() {
     try {
         const response = await fetch(url);
@@ -26,6 +27,7 @@ async function getGamesData() {
         
     } catch (error) {
         console.log("problems loading ");
+        resultsHTML.innerHTML += displayError("problems with fetching data");
     }
 }
-getGamesData()*/
+getGamesData()
