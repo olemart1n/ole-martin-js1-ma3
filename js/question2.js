@@ -4,7 +4,6 @@
 const url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=fd553c7b21f04a49bd5ac558a3e1af3e";
 const resultsHTML = document.querySelector(".results");
 resultsHTML.innerHTML = "";
-const showLoadingIndicator = 5;
 /*
 
 // ASYNC AWAIT SYNTAX
@@ -34,8 +33,8 @@ async function getGamesData() {
         resultsHTML.innerHTML += displayError("problems with fetching data");
     }
 }
-getGamesData() */
-
+getGamesData() 
+*/
 
 // REGULAR PROMISE SYNTAX
 
